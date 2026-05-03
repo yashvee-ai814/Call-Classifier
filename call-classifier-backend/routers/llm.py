@@ -21,7 +21,7 @@ router = APIRouter(prefix="/classify", tags=["Classification"])
 
 def _build_prompt(transcript: str) -> str:
     """Build prompt for LLM."""
-    return f"""You are an AI assistant analyzing call transcripts for Aviva's investment and wealth management business. 
+    return f"""You are an AI assistant analyzing call transcripts for an investment and wealth management business.
 
 Identify the primary reason for the call and return ONLY a JSON object in this format:
 {{
