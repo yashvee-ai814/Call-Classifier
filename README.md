@@ -17,6 +17,47 @@ The LLM prompt is tuned for **investment, wealth, and retirement** domain calls 
 
 ---
 
+## Problem Statement
+
+Customer service teams handle a high volume of calls daily, each made for a different reason. Without a structured way to categorise these interactions, businesses lack the insight needed to:
+
+- Understand the **distribution of call types** and identify the most common reasons customers reach out
+- Pinpoint **operational bottlenecks** — e.g. which call types cause the longest handling times or resolution delays
+- Identify **complaint patterns** and respond to them proactively
+- Make **data-driven decisions** around staffing, training, and process improvement
+
+Manual categorisation is time-consuming, inconsistent, and unscalable during high-demand periods.
+
+---
+
+## Solution
+
+Call Classifier automates this process by routing each transcript through a locally-hosted LLM that returns a **structured, consistent classification** — a concise reason and a standardised category — in real time.
+
+- No manual tagging or post-call data entry required
+- Consistent output schema across all calls, regardless of transcript length or style
+- Fully self-hosted: no data leaves your infrastructure
+
+---
+
+## Benefits
+
+- **Reduced operational overhead** — teams no longer need to manually review and tag call logs
+- **Faster trend detection** — real-time categorisation surfaces demand spikes and complaint surges as they happen
+- **Actionable analytics** — structured data feeds directly into dashboards, reports, and downstream workflows
+- **Adaptable to any domain** — swap the prompt to classify calls in any industry, not just financial services
+
+---
+
+## Future Scope
+
+- **Embedding-based similarity matching** — use vector embeddings to cluster calls by semantic meaning, enabling more nuanced analysis beyond fixed categories
+- **Cost reduction** — embeddings allow lighter-weight models or retrieval-augmented approaches to replace full LLM inference for common call patterns
+- **Trend forecasting** — historical classification data can train predictive models to anticipate demand by call type
+- **Agent integration** — pipe classifications directly into CRM or ticketing systems to trigger automated follow-up workflows
+
+---
+
 ## Architecture
 
 ```mermaid
